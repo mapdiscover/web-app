@@ -1,0 +1,34 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title MapDiscover
+  body.mdc-typography
+    h1.brand-logo MapDiscover
+    .search.mdc-card
+      label.searchbar.mdc-text-field.mdc-text-field--outlined.mdc-text-field--no-label.mdc-text-field--with-trailing-icon
+        span.mdc-text-field__ripple
+        input#search.mdc-text-field__input(
+          type="search",
+          placeholder="Find something",
+          aria-label="Label",
+          enterkeyhint="search",
+          mozactionhint="search",
+          autocomplete="off"
+        )
+        i#searchButton.material-icons.mdc-text-field__icon.mdc-text-field__icon--trailing(
+          tabindex="0",
+          role="button"
+        ) search
+        span.showForSearch.mdc-list-divider.text-field__underline
+      ul#searchResults.showForSearch.mdc-list
+        li.mdc-list-item
+          i.material-icons.mdc-list-item__graphic schedule
+          span.mdc-list-item__ripple
+          span.mdc-list-item__text Test
+    .position
+      .mdc-card
+    a.copyright.mdc-typography--caption(
+      href="https://www.openstreetmap.org/copyright"
+      target="osm"
+    ) © OpenStreetMap-Mitwirkende
