@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(
+      name="viewport",
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    )
+    script(type="module", src="script/index.js")
+    link(
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet")
+    link(
+        href="./test.css"
+        rel="stylesheet"
+    )
+    // link(rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"        )
+    title MapDiscover
+  body.mdc-typography
+    #map
+    h1.brand-logo MapDiscover
+    .search.mdc-card
+      label#search.searchbar.mdc-text-field.mdc-text-field--outlined.mdc-text-field--no-label.mdc-text-field--with-trailing-icon
+        span.mdc-text-field__ripple
+        input.mdc-text-field__input(
+          type="search",
+          placeholder="Find something",
+          aria-label="Label",
+          enterkeyhint="search",
+          mozactionhint="search",
+          autocomplete="off"
+        )
+        i#searchButton.material-icons.mdc-text-field__icon.mdc-text-field__icon--trailing(
+          tabindex="0",
+          role="button"
+        ) search
+        span.showForSearch.mdc-list-divider.text-field__underline
+      ul#searchResults.showForSearch.mdc-list
+        li.mdc-list-item
+          i.material-icons.mdc-list-item__graphic schedule
+          span.mdc-list-item__ripple
+          span.mdc-list-item__text Test
+    .position
+      .mdc-card
+    a.copyright.mdc-typography--caption(
+      href="https://www.openstreetmap.org/copyright",
+      target="osm"
+    ) © OpenStreetMap-Mitwirkende
