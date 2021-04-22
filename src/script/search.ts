@@ -40,10 +40,10 @@ export class Search extends EventTarget {
     this.searchList.listen(
       "MDCList:action",
       (e: MDCListActionEvent) => {
-        this.clear();
         let term = this.searchSuggestions[e.detail.index];
         RecentSearches.push(term);
         this.dispatchEvent(new SearchEvent(term));
+        this.clear();
       }
     );
 
