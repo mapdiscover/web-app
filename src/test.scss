@@ -15,7 +15,7 @@
 @include card.core-styles;
 
 @mixin google-font($family) {
-  @import url("http://fonts.googleapis.com/css?family=#{$family}");
+  @import url("https://fonts.googleapis.com/css?family=#{$family}");
 }
 @import
 url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
